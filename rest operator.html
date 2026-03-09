@@ -1,0 +1,35 @@
+<script>
+
+console.log("----- Section 11: Rest Operator -----");
+
+//32
+function sumAll(...numbers){
+let total=0;
+for(let n of numbers){
+total+=n;
+}
+return total;
+}
+
+console.log("Total Sum:", sumAll(10,20,30,40));
+
+//33
+function printArgs(first,...rest){
+console.log("First:", first);
+console.log("Rest:", rest);
+}
+
+printArgs(1,2,3,4);
+
+//34
+function totalBill(...prices){
+let sum=0;
+for(let p of prices){
+sum+=p;
+}
+console.log("Total Bill:", sum);
+}
+
+totalBill(100,200,300);
+
+</script>
