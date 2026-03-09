@@ -1,0 +1,27 @@
+<script>
+
+console.log("----- Section 3: Scope -----");
+
+//10
+let company="Stackly";
+function showCompany(){
+console.log("Company:", company);
+}
+showCompany();
+
+//11
+if(true){
+var a="var variable";
+let b="let variable";
+const c="const variable";
+console.log(a,b,c);
+}
+
+//12
+function testScope(){
+let insideVar="Inside Function";
+console.log(insideVar);
+}
+testScope();
+
+</script>
