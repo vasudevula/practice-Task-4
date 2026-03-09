@@ -1,0 +1,26 @@
+<script>
+
+console.log("----- Section 12: Destructuring -----");
+
+//35
+let numbers=[10,20,30,40];
+let [a,b,c,d]=numbers;
+console.log(a,b,c,d);
+
+//36
+let person={name:"Ramya Reddy", role:"Developer", salary:40000};
+let {name,role,salary}=person;
+console.log(name,role,salary);
+
+//37
+let arr=[1,2,3,4];
+let [first,,,last]=arr;
+console.log("First:", first);
+console.log("Last:", last);
+
+//38
+let nested=[[1,2],[3,4]];
+let [[x,y],[z,w]]=nested;
+console.log(x,y,z,w);
+
+</script>
