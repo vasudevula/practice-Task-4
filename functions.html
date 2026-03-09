@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Functions Practice</title>
+</head>
+<body>
+
+<h2>Check Console Output</h2>
+
+<script>
+
+// 1
+function greetUser(name) {
+    console.log("Welcome to Stackly, " + name);
+}
+greetUser("Ramya Reddy");
+
+// 2
+function calculateSalary(basic, bonus) {
+    return basic + bonus;
+}
+console.log("Total Salary:", calculateSalary(20000, 5000));
+
+// 3
+function checkEvenOdd(num) {
+    return num % 2 === 0 ? "Even" : "Odd";
+}
+console.log(checkEvenOdd(7));
+
+// 4
+function findMax(a,b,c){
+    return Math.max(a,b,c);
+}
+console.log("Largest:", findMax(10,45,22));
+
+// 5
+function calculateGST(price){
+    return price + price*0.18;
+}
+console.log("Price with GST:", calculateGST(100));
+
+// 6
+function login(username,password){
+    if(username==="admin" && password==="1234"){
+        console.log("Login Successful");
+    } else {
+        console.log("Invalid Credentials");
+    }
+}
+login("admin","1234");
+
+</script>
+
+</body>
+</html>
