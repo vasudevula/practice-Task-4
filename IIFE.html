@@ -1,0 +1,16 @@
+<script>
+
+console.log("----- Section 8: IIFE -----");
+
+//25
+(function(){
+console.log("Website Loaded");
+})();
+
+//26
+(function(price,discount){
+let finalPrice = price - (price*discount/100);
+console.log("Discount Price:", finalPrice);
+})(1000,10);
+
+</script>
