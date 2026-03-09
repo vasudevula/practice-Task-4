@@ -1,0 +1,57 @@
+<script>
+
+console.log("----- Section 6: Callback & Higher Order -----");
+
+//19
+function processData(callback){
+console.log("Processing Data...");
+callback();
+}
+
+function done(){
+console.log("Callback Executed");
+}
+
+processData(done);
+
+//20
+function calculate(a,b,operation){
+return operation(a,b);
+}
+
+function add(x,y){
+return x+y;
+}
+
+function sub(x,y){
+return x-y;
+}
+
+console.log("Add:", calculate(10,5,add));
+console.log("Sub:", calculate(10,5,sub));
+
+//21
+function taskCompleted(){
+console.log("Task Completed");
+}
+
+function performCalculation(a,b,callback){
+console.log("Result:", a+b);
+callback();
+}
+
+performCalculation(5,7,taskCompleted);
+
+//22
+function userData(callback){
+let user={name:"Rahul", age:22};
+callback(user);
+}
+
+function printUser(data){
+console.log("User:", data);
+}
+
+userData(printUser);
+
+</script>
